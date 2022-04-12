@@ -41,6 +41,9 @@ const MainPage = () => {
                 <input type="number" min="1" name="goal" defaultValue={goal} onChange={handleGoalChange} />
                 <button onClick={toggle}>OK</button>
             </Modal>
+            <div>
+                <button onClick={toggle}>Change Name or Goals</button>
+            </div>
 
             <Header name={name}/>
             <UserContext.Provider value={{name, goal}}>
