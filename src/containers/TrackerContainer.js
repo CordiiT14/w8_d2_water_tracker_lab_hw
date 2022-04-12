@@ -2,7 +2,7 @@ import { useState } from 'react';
 import TrackerDisplay from "../components/TrackerDisplay";
 import FormContainer from "./FormContainer";
 
-const TrackerContainer = ({name, goal}) => {
+const TrackerContainer = () => {
 
     const [glasses, setGlasses] = useState(0);
 
@@ -21,7 +21,7 @@ const TrackerContainer = ({name, goal}) => {
 
     return (
         <>
-            <TrackerDisplay glasses={glasses} name={name} goal={goal} />
+            <TrackerDisplay glasses={glasses}/>
             <FormContainer handleUpdate={handleUpdate} handleEmpty={handleEmpty} />
         </>
     )
